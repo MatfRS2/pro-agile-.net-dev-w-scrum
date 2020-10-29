@@ -46,6 +46,18 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="NHibernate">
+      <HintPath>..\..\..\Libs\NHibernate.3.0.0.2001\lib\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.Castle">
+      <HintPath>..\..\..\Libs\NHibernate.3.0.0.2001\lib\NHibernate.ByteCode.Castle.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Data.Linq">
+      <HintPath>..\..\..\Libs\NHibernate.3.0.0.2001\lib\Remotion.Data.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="StructureMap">
+      <HintPath>..\..\..\Libs\structuremap.2.6.1.0\lib\StructureMap.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -120,10 +132,38 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="BootStrapper.cs" />
+    <Compile Include="Controllers\Account\AccountHomeController.cs" />
+    <Compile Include="Controllers\Account\AccountLogOnController.cs" />
+    <Compile Include="Controllers\Account\AccountRegisterController.cs" />
+    <Compile Include="Controllers\CashInController.cs" />
+    <Compile Include="Controllers\GamePlay\BetController.cs" />
+    <Compile Include="Controllers\GamePlay\BlackJackTableGameViewController.cs" />
+    <Compile Include="Controllers\GamePlay\CreateNewGameController.cs" />
+    <Compile Include="Controllers\GamePlay\DealController.cs" />
+    <Compile Include="Controllers\GamePlay\DoubleDownController.cs" />
+    <Compile Include="Controllers\GamePlay\HitController.cs" />
+    <Compile Include="Controllers\GamePlay\InsuranceController.cs" />
+    <Compile Include="Controllers\GamePlay\SplitController.cs" />
+    <Compile Include="Controllers\GamePlay\StickController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\SignOutController.cs" />
+    <Compile Include="Controllers\StructureMapControllerFactory.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\FlashHelpers.cs" />
+    <Compile Include="Models\BetCommandMapper.cs" />
+    <Compile Include="Models\ICommandMapper.cs" />
+    <Compile Include="Models\ViewModels\AccountHomeView.cs" />
+    <Compile Include="Models\ViewModels\AccountInformationView.cs" />
+    <Compile Include="Models\ViewModels\AccountLogOnFormView.cs" />
+    <Compile Include="Models\ViewModels\AccountRegisterFormView.cs" />
+    <Compile Include="Models\ViewModels\BetView.cs" />
+    <Compile Include="Models\ViewModels\CashInView.cs" />
+    <Compile Include="Models\ViewModels\GamePlayView.cs" />
+    <Compile Include="Models\ViewModels\HomeView.cs" />
+    <Compile Include="Models\ViewModels\IMasterView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -131,13 +171,88 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Css\Style.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\background.jpg" />
+    <Content Include="Images\Blackjack-Table.png" />
+    <Content Include="Images\cards\53.png" />
+    <Content Include="Images\cards\54.png" />
+    <Content Include="Images\cards\Ace_of_Clubs.png" />
+    <Content Include="Images\cards\Ace_of_Diamonds.png" />
+    <Content Include="Images\cards\Ace_of_hearts.png" />
+    <Content Include="Images\cards\Ace_of_Spades.png" />
+    <Content Include="Images\cards\b1fh.png" />
+    <Content Include="Images\cards\b1fv.png" />
+    <Content Include="Images\cards\b1pb.png" />
+    <Content Include="Images\cards\b1pl.png" />
+    <Content Include="Images\cards\b1pr.png" />
+    <Content Include="Images\cards\b1pt.png" />
+    <Content Include="Images\cards\b2fh.png" />
+    <Content Include="Images\cards\b2pb.png" />
+    <Content Include="Images\cards\b2pl.png" />
+    <Content Include="Images\cards\b2pr.png" />
+    <Content Include="Images\cards\b2pt.png" />
+    <Content Include="Images\cards\Eight_of_Clubs.png" />
+    <Content Include="Images\cards\Eight_of_Diamonds.png" />
+    <Content Include="Images\cards\Eight_of_Hearts.png" />
+    <Content Include="Images\cards\Eight_of_Spades.png" />
+    <Content Include="Images\cards\Five_of_Clubs.png" />
+    <Content Include="Images\cards\Five_of_Diamonds.png" />
+    <Content Include="Images\cards\Five_of_Hearts.png" />
+    <Content Include="Images\cards\Five_of_Spades.png" />
+    <Content Include="Images\cards\Four_of_Clubs.png" />
+    <Content Include="Images\cards\Four_of_Diamonds.png" />
+    <Content Include="Images\cards\Four_of_Hearts.png" />
+    <Content Include="Images\cards\Four_of_Spades.png" />
+    <Content Include="Images\cards\hidden.png" />
+    <Content Include="Images\cards\Jack_of_Clubs.png" />
+    <Content Include="Images\cards\Jack_of_Diamonds.png" />
+    <Content Include="Images\cards\Jack_of_Hearts.png" />
+    <Content Include="Images\cards\Jack_of_Spades.png" />
+    <Content Include="Images\cards\King_of_Clubs.png" />
+    <Content Include="Images\cards\King_of_Diamonds.png" />
+    <Content Include="Images\cards\King_of_Hearts.png" />
+    <Content Include="Images\cards\King_of_Spades.png" />
+    <Content Include="Images\cards\Nine_of_Clubs.png" />
+    <Content Include="Images\cards\Nine_of_Diamonds.png" />
+    <Content Include="Images\cards\Nine_of_Hearts.png" />
+    <Content Include="Images\cards\Nine_of_Spades.png" />
+    <Content Include="Images\cards\Queen_of_Clubs.png" />
+    <Content Include="Images\cards\Queen_of_Diamonds.png" />
+    <Content Include="Images\cards\Queen_of_Hearts.png" />
+    <Content Include="Images\cards\Queen_of_Spades.png" />
+    <Content Include="Images\cards\Seven_of_Clubs.png" />
+    <Content Include="Images\cards\Seven_of_Diamonds.png" />
+    <Content Include="Images\cards\Seven_of_Hearts.png" />
+    <Content Include="Images\cards\Seven_of_Spades.png" />
+    <Content Include="Images\cards\Six_of_Clubs.png" />
+    <Content Include="Images\cards\Six_of_Diamonds.png" />
+    <Content Include="Images\cards\Six_of_Hearts.png" />
+    <Content Include="Images\cards\Six_of_Spades.png" />
+    <Content Include="Images\cards\Ten_of_Clubs.png" />
+    <Content Include="Images\cards\Ten_of_Diamonds.png" />
+    <Content Include="Images\cards\Ten_of_Hearts.png" />
+    <Content Include="Images\cards\Ten_of_Spades.png" />
+    <Content Include="Images\cards\Three_of_Clubs.png" />
+    <Content Include="Images\cards\Three_of_Diamonds.png" />
+    <Content Include="Images\cards\Three_of_Hearts.png" />
+    <Content Include="Images\cards\Three_of_Spades.png" />
+    <Content Include="Images\cards\Two_of_Clubs.png" />
+    <Content Include="Images\cards\Two_of_Diamonds.png" />
+    <Content Include="Images\cards\Two_of_Hearts.png" />
+    <Content Include="Images\cards\Two_of_Spades.png" />
+    <Content Include="Images\chips.jpg" />
+    <Content Include="Images\Logo.png" />
+    <Content Include="Images\retro_background.gif" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <None Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.js" />
@@ -147,7 +262,20 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Views\AccountHome\Index.aspx" />
+    <Content Include="Views\AccountLogOn\LogOn.aspx" />
+    <Content Include="Views\AccountRegister\Register.aspx" />
+    <Content Include="Views\Bet\Bet.aspx" />
+    <Content Include="Views\BlackJackTableGameView\Display.aspx" />
+    <Content Include="Views\CashIn\CashIn.aspx" />
+    <Content Include="Views\Home\Index.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -162,10 +290,10 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\BlackjackLayout.Master" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -179,6 +307,23 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KojackGames.Blackjack.Domain\KojackGames.Blackjack.Domain.csproj">
+      <Project>{84e4d508-7223-45da-961b-800022738de0}</Project>
+      <Name>KojackGames.Blackjack.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KojackGames.Blackjack.Infrastructure.Nhibernate\KojackGames.Blackjack.Infrastructure.Nhibernate.csproj">
+      <Project>{0b2759d4-6583-4545-92a6-40a68e53ccbf}</Project>
+      <Name>KojackGames.Blackjack.Infrastructure.Nhibernate</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KojackGames.Blackjack.Infrastructure\KojackGames.Blackjack.Infrastructure.csproj">
+      <Project>{3c2b4832-4dc8-4b58-b846-d7126585eddc}</Project>
+      <Name>KojackGames.Blackjack.Infrastructure</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
