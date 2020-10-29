@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="..\Src\Trunk\KojackGames.Blackjack\KojackGames.Blackjack.Core.Tests\bin\Release\KojackGames.Blackjack.Core.Tests.dll" total="0" failures="0" not-run="0" date="2011-05-08" time="19:12:28">
+  <environment nunit-version="2.4.6.0" clr-version="4.0.30319.225" os-version="Microsoft Windows NT 6.1.7600.0" platform="Win32NT" cwd="C:\KojackGames.Blackjack\Build" machine-name="SCOTTDELL-PC" user="Scott" user-domain="ScottDell-PC" />
+  <culture-info current-culture="en-GB" current-uiculture="en-US" />
+  <test-suite name="..\Src\Trunk\KojackGames.Blackjack\KojackGames.Blackjack.Core.Tests\bin\Release\KojackGames.Blackjack.Core.Tests.dll" success="True" time="0.001" asserts="0">
+    <results />
+  </test-suite>
+</test-results>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Project DefaultTargets="AcceptanceTests" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <Target Name="AcceptanceTests" DependsOnTargets="Build">
+    <Message Text="Running Acceptance Tests"/>
+    <NUnit Assemblies="$(SolutionPath)KojackGames.Blackjack.Acceptance.Tests\bin\Release\KojackGames.Blackjack.Acceptance.Tests.dll"
+           ContinueOnError="false"
+           ToolPath="$(NUnitDir)"
+           OutputXmlFile="UATResults.xml" />
+    
+    <Message Text="Finished Running Acceptance Tests"/>    
+  </Target>
+</Project >

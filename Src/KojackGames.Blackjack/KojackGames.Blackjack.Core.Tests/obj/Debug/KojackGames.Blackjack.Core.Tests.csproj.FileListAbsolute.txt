@@ -1,0 +1,2 @@
+D:\Prog\agileNet\src\Src\KojackGames.Blackjack\KojackGames.Blackjack.Core.Tests\obj\Debug\KojackGames.Blackjack.Core.Tests.csprojAssemblyReference.cache
+D:\Prog\agileNet\src\Src\KojackGames.Blackjack\KojackGames.Blackjack.Core.Tests\obj\Debug\KojackGames.Blackjack.Core.Tests.csproj.CoreCompileInputs.cache

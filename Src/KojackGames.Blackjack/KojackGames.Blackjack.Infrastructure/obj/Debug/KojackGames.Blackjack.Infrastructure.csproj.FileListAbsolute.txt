@@ -1,0 +1,16 @@
+D:\Prog\agileNet\src\Src\KojackGames.Blackjack\KojackGames.Blackjack.Infrastructure\bin\Debug\KojackGames.Blackjack.Infrastructure.dll
+D:\Prog\agileNet\src\Src\KojackGames.Blackjack\KojackGames.Blackjack.Infrastructure\bin\Debug\KojackGames.Blackjack.Infrastructure.pdb
+D:\Prog\agileNet\src\Src\KojackGames.Blackjack\KojackGames.Blackjack.Infrastructure\bin\Debug\StructureMap.dll
+D:\Prog\agileNet\src\Src\KojackGames.Blackjack\KojackGames.Blackjack.Infrastructure\bin\Debug\StructureMap.xml
+D:\Prog\agileNet\src\Src\KojackGames.Blackjack\KojackGames.Blackjack.Infrastructure\obj\Debug\KojackGames.Blackjack.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Prog\agileNet\src\Src\KojackGames.Blackjack\KojackGames.Blackjack.Infrastructure\obj\Debug\KojackGames.Blackjack.Infrastructure.csproj.CopyComplete
+D:\Prog\agileNet\src\Src\KojackGames.Blackjack\KojackGames.Blackjack.Infrastructure\obj\Debug\KojackGames.Blackjack.Infrastructure.dll
+D:\Prog\agileNet\src\Src\KojackGames.Blackjack\KojackGames.Blackjack.Infrastructure\obj\Debug\KojackGames.Blackjack.Infrastructure.pdb
+D:\vlado\Courses\Matf\MatfRs2--f-Apress--agileNet\src\Src\KojackGames.Blackjack\KojackGames.Blackjack.Infrastructure\bin\Debug\KojackGames.Blackjack.Infrastructure.dll
+D:\vlado\Courses\Matf\MatfRs2--f-Apress--agileNet\src\Src\KojackGames.Blackjack\KojackGames.Blackjack.Infrastructure\bin\Debug\KojackGames.Blackjack.Infrastructure.pdb
+D:\vlado\Courses\Matf\MatfRs2--f-Apress--agileNet\src\Src\KojackGames.Blackjack\KojackGames.Blackjack.Infrastructure\bin\Debug\StructureMap.dll
+D:\vlado\Courses\Matf\MatfRs2--f-Apress--agileNet\src\Src\KojackGames.Blackjack\KojackGames.Blackjack.Infrastructure\bin\Debug\StructureMap.xml
+D:\vlado\Courses\Matf\MatfRs2--f-Apress--agileNet\src\Src\KojackGames.Blackjack\KojackGames.Blackjack.Infrastructure\obj\Debug\KojackGames.Blackjack.Infrastructure.csproj.CoreCompileInputs.cache
+D:\vlado\Courses\Matf\MatfRs2--f-Apress--agileNet\src\Src\KojackGames.Blackjack\KojackGames.Blackjack.Infrastructure\obj\Debug\KojackGames.Blackjack.Infrastructure.csproj.CopyComplete
+D:\vlado\Courses\Matf\MatfRs2--f-Apress--agileNet\src\Src\KojackGames.Blackjack\KojackGames.Blackjack.Infrastructure\obj\Debug\KojackGames.Blackjack.Infrastructure.dll
+D:\vlado\Courses\Matf\MatfRs2--f-Apress--agileNet\src\Src\KojackGames.Blackjack\KojackGames.Blackjack.Infrastructure\obj\Debug\KojackGames.Blackjack.Infrastructure.pdb

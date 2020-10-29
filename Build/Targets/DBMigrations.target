@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <Project DefaultTargets="AcceptanceTests" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+			
+    <PropertyGroup>
+     <DatabaseName>Blackjack</DatabaseName>
+     <Sqlfiles>$(MSBuildProjectDirectory)\..\Src\Trunk\KojackGames.Blackjack\Database</Sqlfiles>
+     <Database>SCOTTDELL-PC\SQLEXPRESS</Database>
+     <Environment>LOCAL</Environment>
+     <VersionFile>_BuildInfo.xml</VersionFile>
+     <VersionXpath>//buildInfo/version</VersionXpath>
+     
+   </PropertyGroup>
+
+   <Target Name="Migrate" >
+     <Exec Command="..\Tools\RoundhousE.v0.7.0.281\sample\deployment\Console\rh.exe /d=$(DatabaseName) /f=$(Sqlfiles) /s=$(Database) /env=$(Environment) /vf=$(versionFile) /vx=$(VersionXpath) /simple" />     
+   </Target>
+</Project>

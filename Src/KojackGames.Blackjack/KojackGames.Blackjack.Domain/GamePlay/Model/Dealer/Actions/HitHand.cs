@@ -1,0 +1,31 @@
+﻿using System;
+using KojackGames.Blackjack.Domain.GamePlay.Model.Exceptions;
+using KojackGames.Blackjack.Domain.GamePlay.Model.PlayingPosition;
+using KojackGames.Blackjack.Domain.GamePlay.Model.PlayingPosition.Hands.Status;
+using KojackGames.Blackjack.Domain.Membership.Model;
+
+namespace KojackGames.Blackjack.Domain.GamePlay.Model.Dealer.Actions
+{
+    public class HitHand : DealerActionOnPlayersHand, IDealerAction
+    {
+        public HitHand(IHandStatusFactory hand_status_factory, IPlayDealersHand play_dealers_hand, 
+                       IPlayingHandsEndGameStatusDecider playing_hands_end_game_status_decider,
+                       IChipAllocator chip_allocator)
+            : base(hand_status_factory, play_dealers_hand, playing_hands_end_game_status_decider, chip_allocator)
+        {            
+        }
+                
+        public override void action_to_perform(IPlayingPositions playing_positions, ICardShoe card_shoe, IPlayer player)
+        {
+            raise_illegal_move_if_action_cannot_be_made_on(playing_positions, player);            
+
+            playing_positions.players_active_hand.add(card_shoe.take_card());            
+        }
+
+        public void raise_illegal_move_if_action_cannot_be_made_on(IPlayingPositions playing_positions, IPlayer player)
+        {
+            if (playing_positions.players_active_hand.turn_ended())
+                throw new IllegalMoveException("Cannot hit hand as your turn has ended.");
+        }         
+    }
+}

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="CoreTest" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <Target Name="CoreTests" DependsOnTargets="Build">
+
+    <Message Text="Running Core Tests"/>
+    
+      <PropertyGroup>
+        <MSpecCommand>
+          ..\Libs\Machine.Specifications.0.4.9.0\Tools\mspec-clr4.exe $(SolutionPath)KojackGames.Blackjack.Core.Tests\bin\Release\KojackGames.Blackjack.Core.Tests.dll
+        </MSpecCommand>
+      </PropertyGroup>
+      <Message Importance="high" Text="Running Specs with this command: $(MSpecCommand)"/>
+      <Exec Command="$(MSpecCommand)" />    
+    
+    <Message Text="Finished Running Core Tests"/>
+
+  </Target>
+
+</Project>

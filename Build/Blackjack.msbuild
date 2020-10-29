@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003"
+         DefaultTargets="All">
+
+  <PropertyGroup>        
+    <SolutionPath>$(MSBuildProjectDirectory)\..\src\trunk\KojackGames.Blackjack\</SolutionPath>    
+  </PropertyGroup>  
+
+  <Import Project="Targets\MSBuild.Community.Tasks.Targets"/>
+  <Import Project="Targets\BuildSolution.target" />
+  <Import Project="Targets\CoreTests.target" />
+  <Import Project="Targets\AcceptanceTests.target" />
+  <Import Project="Targets\DBMigrations.target" />
+
+  <Target Name="All"
+          DependsOnTargets="CoreTests;
+                            AcceptanceTests;" />
+</Project>

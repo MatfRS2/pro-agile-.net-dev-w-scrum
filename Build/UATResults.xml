@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="..\Src\Trunk\KojackGames.Blackjack\KojackGames.Blackjack.Acceptance.Tests\bin\Release\KojackGames.Blackjack.Acceptance.Tests.dll" total="40" failures="1" not-run="0" date="2011-05-08" time="19:05:30">
+  <environment nunit-version="2.4.6.0" clr-version="4.0.30319.225" os-version="Microsoft Windows NT 6.1.7600.0" platform="Win32NT" cwd="C:\KojackGames.Blackjack\Build" machine-name="SCOTTDELL-PC" user="Scott" user-domain="ScottDell-PC" />
+  <culture-info current-culture="en-GB" current-uiculture="en-US" />
+  <test-suite name="..\Src\Trunk\KojackGames.Blackjack\KojackGames.Blackjack.Acceptance.Tests\bin\Release\KojackGames.Blackjack.Acceptance.Tests.dll" success="False" time="854.791" asserts="0">
+    <results>
+      <test-suite name="KojackGames" success="False" time="854.725" asserts="0">
+        <results>
+          <test-suite name="Blackjack" success="False" time="854.710" asserts="0">
+            <results>
+              <test-suite name="Acceptance" success="False" time="854.688" asserts="0">
+                <results>
+                  <test-suite name="Tests" success="False" time="854.673" asserts="0">
+                    <results>
+                      <test-suite name="Features" success="False" time="854.669" asserts="0">
+                        <results>
+                          <test-suite name="CashInFeature" description="Cash in" success="True" time="0.005" asserts="0">
+                            <results />
+                          </test-suite>
+                          <test-suite name="DealCardsFeature" description="Deal Cards" success="False" time="66.193" asserts="0">
+                            <results>
+                              <test-case name="KojackGames.Blackjack.Acceptance.Tests.Features.DealCardsFeature.Deal" description="Deal" executed="True" success="False" time="62.380" asserts="0">
+                                <failure>
+                                  <message><![CDATA[WatiN.Core.Exceptions.TimeoutException : Timeout while Internet Explorer state not complete]]></message>
+                                  <stack-trace><![CDATA[at WatiN.Core.UtilityClasses.TryFuncUntilTimeOut.ThrowTimeOutException(Exception lastException, String message)
+at WatiN.Core.UtilityClasses.TryFuncUntilTimeOut.HandleTimeOut()
+at WatiN.Core.UtilityClasses.TryFuncUntilTimeOut.Try[T](DoFunc`1 func)
+at WatiN.Core.WaitForCompleteBase.WaitUntil(DoFunc`1 waitWhile, BuildTimeOutExceptionMessage exceptionMessage)
+at WatiN.Core.Native.InternetExplorer.IEWaitForComplete.WaitUntilNotNull(DoFunc`1 func, BuildTimeOutExceptionMessage exceptionMessage)
+at WatiN.Core.Native.InternetExplorer.IEWaitForComplete.WaitWhileIEReadyStateNotComplete(IWebBrowser2 ie)
+at WatiN.Core.Native.InternetExplorer.IEWaitForComplete.WaitForCompleteOrTimeout()
+at WatiN.Core.WaitForCompleteBase.DoWait()
+at WatiN.Core.DomContainer.WaitForComplete(IWait waitForComplete)
+at WatiN.Core.IE.WaitForComplete(Int32 waitForCompleteTimeOut)
+at WatiN.Core.DomContainer.WaitForComplete()
+at WatiN.Core.Browser.GoTo(Uri url)
+at WatiN.Core.IE.FinishInitialization(Uri uri)
+at WatiN.Core.IE.CreateNewIEAndGoToUri(Uri uri, IDialogHandler logonDialogHandler, Boolean createInNewProcess)
+at WatiN.Core.IE..ctor(String url)
+at KojackGames.Blackjack.Acceptance.Tests.Utilities.WebBrowser.get_Current() in c:\KojackGames.Blackjack\Src\Trunk\KojackGames.Blackjack\KojackGames.Blackjack.Acceptance.Tests\Utilities\WebBrowser.cs:line 19
+at KojackGames.Blackjack.Acceptance.Tests.Utilities.SiteNavigator.go_to(String relativeUrl) in c:\KojackGames.Blackjack\Src\Trunk\KojackGames.Blackjack\KojackGames.Blackjack.Acceptance.Tests\Utilities\SiteNavigator.cs:line 9
+at KojackGames.Blackjack.Acceptance.Tests.Events.FeatureEvents.BeforeScenario() in c:\KojackGames.Blackjack\Src\Trunk\KojackGames.Blackjack\KojackGames.Blackjack.Acceptance.Tests\Events\FeatureEvents.cs:line 26
+at TechTalk.SpecFlow.Bindings.MethodBinding.InvokeAction(Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+at TechTalk.SpecFlow.TestRunner.FireEvents(BindingEvent bindingEvent, IEnumerable`1 tags)
+at KojackGames.Blackjack.Acceptance.Tests.Features.DealCardsFeature.Deal() in c:\KojackGames.Blackjack\Src\Trunk\KojackGames.Blackjack\KojackGames.Blackjack.Acceptance.Tests\Features\002-DealCards.feature:line 6
+]]></stack-trace>
+                                </failure>
+                              </test-case>
+                            </results>
+                          </test-suite>
+                          <test-suite name="DealerRulesFeature" description="Dealer Rules" success="True" time="54.938" asserts="0">
+                            <results>
+                              <test-case name="KojackGames.Blackjack.Acceptance.Tests.Features.DealerRulesFeature.DealerPlaysUntilHeGetsOver17" description="Dealer plays until he gets over 17" executed="True" success="True" time="54.933" asserts="4" />
+                            </results>
+                          </test-suite>
+                          <test-suite name="DeckOfCardsFeature" description="Deck Of Cards" success="True" time="59.162" asserts="0">
+                            <results>
+                              <test-case name="KojackGames.Blackjack.Acceptance.Tests.Features.DeckOfCardsFeature.CheckFor52DifferentCards" description="check for 52 different cards" executed="True" success="True" time="15.067" asserts="54" />
+                              <test-case name="KojackGames.Blackjack.Acceptance.Tests.Features.DeckOfCardsFeature.ShuffleTheDeck" description="Shuffle the deck" executed="True" success="True" time="13.959" asserts="3" />
+                              <test-case name="KojackGames.Blackjack.Acceptance.Tests.Features.DeckOfCardsFeature.TakeACardFromTheDeck" description="Take a card from the deck" executed="True" success="True" time="14.930" asserts="1" />
+                              <test-case name="KojackGames.Blackjack.Acceptance.Tests.Features.DeckOfCardsFeature.TakeCardsFromAnOrderedDeck" description="Take cards from an ordered deck" executed="True" success="True" time="15.196" asserts="8" />
+                            </results>
+                          </test-suite>
+                          <test-suite name="DoubleDownFeature" description="Double Down" success="True" time="80.757" asserts="0">
+                            <results>
+                              <test-case name="KojackGames.Blackjack.Acceptance.Tests.Features.DoubleDownFeature.DoubleDownAndLose" description="Double Down and lose" executed="True" success="True" time="22.021" asserts="1" />
+                              <test-case name="KojackGames.Blackjack.Acceptance.Tests.Features.DoubleDownFeature.DoubleDownAndWin" description="Double Down and win" executed="True" success="True" time="20.204" asserts="1" />
+                              <test-case name="KojackGames.Blackjack.Acceptance.Tests.Features.DoubleDownFeature.OfferToDouble" description="Offer to double" executed="True" success="True" time="18.281" asserts="1" />
+                              <test-case name="KojackGames.Blackjack.Acceptance.Tests.Features.DoubleDownFeature.TryingToDoubleDownWithoutEnoughMoney" description="Trying to double down without enough money" executed="True" success="True" time="20.239" asserts="1" />
+                            </results>
+                          </test-suite>
+                          <test-suite name="GetInvolvedInAGameFeature" description="Get involved in a game" success="True" time="59.549" asserts="0">
+                            <results>
+                              <test-case name="KojackGames.Blackjack.Acceptance.Tests.Features.GetInvolvedInAGameFeature.DoesntHaveEnoughMoneyToBet" description="Doesnt have enough money to bet" executed="True" success="True" time="18.754" asserts="1" />
+                              <test-case name="KojackGames.Blackjack.Acceptance.Tests.Features.GetInvolvedInAGameFeature.FinishAGameStartANewOne" description="Finish a game start a new one" executed="True" success="True" time="19.616" asserts="2" />
+                              <test-case name="KojackGames.Blackjack.Acceptance.Tests.Features.GetInvolvedInAGameFeature.MakeABet" description="Make a bet" executed="True" success="True" time="21.169" asserts="2" />
+                            </results>
+                          </test-suite>
+                          <test-suite name="HitFeature" description="Hit" success="True" time="37.461" asserts="0">
+                            <results>
+                              <test-case name="KojackGames.Blackjack.Acceptance.Tests.Features.HitFeature.Hit" description="Hit" executed="True" success="True" time="19.562" asserts="3" />
+                              <test-case name="KojackGames.Blackjack.Acceptance.Tests.Features.HitFeature.OptionToHit" description="Option to Hit" executed="True" success="True" time="17.876" asserts="1" />
+                            </results>
+                          </test-suite>
+                          <test-suite name="InsuranceFeature" description="Insurance" success="True" time="99.092" asserts="0">
+                            <results>
+                              <test-case name="KojackGames.Blackjack.Acceptance.Tests.Features.InsuranceFeature.OfferInsuranceBet" description="Offer insurance bet" executed="True" success="True" time="20.103" asserts="1" />
+                              <test-case name="KojackGames.Blackjack.Acceptance.Tests.Features.InsuranceFeature.OfferInsuranceBetOnlyOnVisibleAce" description="Offer insurance bet only on visible ace" executed="True" success="True" time="23.764" asserts="1" />
+                              <test-case name="KojackGames.Blackjack.Acceptance.Tests.Features.InsuranceFeature.TakeOfferOfInsurance" description="Take offer of insurance" executed="True" success="True" time="17.114" asserts="2" />
+                              <test-case name="KojackGames.Blackjack.Acceptance.Tests.Features.InsuranceFeature.TakeOfferOfInsuranceWithDealerGettingBlackjackAndPlayerLosing" description="Take offer of insurance with dealer getting blackjack and player losing" executed="True" success="True" time="18.815" asserts="2" />
+                              <test-case name="KojackGames.Blackjack.Acceptance.Tests.Features.InsuranceFeature.TakeOfferOfInsuranceWithDealerNotGettingBlackjackAndPlayerLosing" description="Take offer of insurance with dealer not getting blackjack and player losing" executed="True" success="True" time="19.286" asserts="2" />
+                            </results>
+                          </test-suite>
+                          <test-suite name="MemberRegistrationDataFeature" description="Member Registration Data" success="True" time="18.996" asserts="0">
+                            <results>
+                              <test-case name="KojackGames.Blackjack.Acceptance.Tests.Features.MemberRegistrationDataFeature.LogCustomersRegistering" description="Log customers registering" executed="True" success="True" time="18.989" asserts="1" />
+                            </results>
+                          </test-suite>
+                          <test-suite name="MemberRegistrationFeature" description="Member Registration" success="True" time="57.505" asserts="0">
+                            <results>
+                              <test-case name="KojackGames.Blackjack.Acceptance.Tests.Features.MemberRegistrationFeature.AddAnAccount" description="Add an account" executed="True" success="True" time="22.385" asserts="1" />
+                              <test-case name="KojackGames.Blackjack.Acceptance.Tests.Features.MemberRegistrationFeature.DisableAccessToUnauthenticatedUsers" description="Disable access to unauthenticated users" executed="True" success="True" time="16.338" asserts="1" />
+                              <test-case name="KojackGames.Blackjack.Acceptance.Tests.Features.MemberRegistrationFeature.LogIn" description="log in" executed="True" success="True" time="18.774" asserts="1" />
+                            </results>
+                          </test-suite>
+                          <test-suite name="PayingOutFeature" description="Paying Out" success="True" time="97.710" asserts="0">
+                            <results>
+                              <test-case name="KojackGames.Blackjack.Acceptance.Tests.Features.PayingOutFeature.BothPlayerAndDealerGetBlackjackSoGameEndsInDraw" description="Both player and dealer get blackjack so game ends in draw" executed="True" success="True" time="19.437" asserts="1" />
+                              <test-case name="KojackGames.Blackjack.Acceptance.Tests.Features.PayingOutFeature.DoubleDownAndWin" description="Double Down and win" executed="True" success="True" time="20.380" asserts="1" />
+                              <test-case name="KojackGames.Blackjack.Acceptance.Tests.Features.PayingOutFeature.PlayerGetsBlackjackAndBeatsDealer" description="Player gets Blackjack and beats Dealer" executed="True" success="True" time="20.141" asserts="1" />
+                              <test-case name="KojackGames.Blackjack.Acceptance.Tests.Features.PayingOutFeature.PlayerLoses" description="Player loses" executed="True" success="True" time="17.743" asserts="1" />
+                              <test-case name="KojackGames.Blackjack.Acceptance.Tests.Features.PayingOutFeature.PlayerLosesButHasTakenInsurance" description="Player loses but has taken insurance" executed="True" success="True" time="20.002" asserts="1" />
+                            </results>
+                          </test-suite>
+                          <test-suite name="SplitFeature" description="Split" success="True" time="85.409" asserts="0">
+                            <results>
+                              <test-case name="KojackGames.Blackjack.Acceptance.Tests.Features.SplitFeature.OfferToSplit" description="Offer to split" executed="True" success="True" time="21.623" asserts="1" />
+                              <test-case name="KojackGames.Blackjack.Acceptance.Tests.Features.SplitFeature.SplitHand" description="Split hand" executed="True" success="True" time="20.456" asserts="6" />
+                              <test-case name="KojackGames.Blackjack.Acceptance.Tests.Features.SplitFeature.SplitHandAndCompleteGame" description="Split hand and complete game" executed="True" success="True" time="24.162" asserts="13" />
+                              <test-case name="KojackGames.Blackjack.Acceptance.Tests.Features.SplitFeature.TryingToSplitWithoutEnoughMoney" description="Trying to split without enough money" executed="True" success="True" time="19.158" asserts="1" />
+                            </results>
+                          </test-suite>
+                          <test-suite name="StandFeature" description="Stand" success="True" time="17.034" asserts="0">
+                            <results>
+                              <test-case name="KojackGames.Blackjack.Acceptance.Tests.Features.StandFeature.OptionToStick" description="Option to stick" executed="True" success="True" time="17.029" asserts="1" />
+                            </results>
+                          </test-suite>
+                          <test-suite name="WinGameFeature" description="Win game" success="True" time="120.570" asserts="0">
+                            <results>
+                              <test-case name="KojackGames.Blackjack.Acceptance.Tests.Features.WinGameFeature.BothPlayerAndDealerGetBlackjackSoGameEndsInDraw" description="Both player and dealer get blackjack so game ends in draw" executed="True" success="True" time="17.874" asserts="1" />
+                              <test-case name="KojackGames.Blackjack.Acceptance.Tests.Features.WinGameFeature.DealerGetsBlackjackWithTwoCards" description="Dealer Gets blackjack with two cards" executed="True" success="True" time="17.359" asserts="1" />
+                              <test-case name="KojackGames.Blackjack.Acceptance.Tests.Features.WinGameFeature.PlayerGetsBlackjackWithTwoCards" description="Player Gets blackjack with two cards" executed="True" success="True" time="23.891" asserts="1" />
+                              <test-case name="KojackGames.Blackjack.Acceptance.Tests.Features.WinGameFeature.PlayerSticksAndDealerBustsSoPlayerWins" description="Player sticks and dealer busts so player wins" executed="True" success="True" time="20.640" asserts="1" />
+                              <test-case name="KojackGames.Blackjack.Acceptance.Tests.Features.WinGameFeature.PlayerSticksAt16AndDealerSticksAt19SoPlayersWins" description="Player sticks at 16 and dealer sticks at 19 so players wins" executed="True" success="True" time="19.541" asserts="1" />
+                              <test-case name="KojackGames.Blackjack.Acceptance.Tests.Features.WinGameFeature.PlayerSticksAt20AndDealerSticksAt19SoPlayersWins" description="Player sticks at 20 and dealer sticks at 19 so players wins" executed="True" success="True" time="21.253" asserts="1" />
+                            </results>
+                          </test-suite>
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
