@@ -124,6 +124,10 @@
       <Project>{3C2B4832-4DC8-4B58-B846-D7126585EDDC}</Project>
       <Name>KojackGames.Blackjack.Infrastructure</Name>
     </ProjectReference>
+    <ProjectReference Include="..\KojackGames.Blackjack.UI.Web\KojackGames.Blackjack.UI.Web.csproj">
+      <Project>{44e79289-c300-4212-ab06-caa1c887a291}</Project>
+      <Name>KojackGames.Blackjack.UI.Web</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controller_Specs\BlackJackTableGameView\" />

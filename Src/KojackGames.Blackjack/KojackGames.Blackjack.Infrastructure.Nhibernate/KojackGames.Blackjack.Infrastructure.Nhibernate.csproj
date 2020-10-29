@@ -80,6 +80,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config1" />
     <None Include="Mapping\Domain\nhibernate-mapping.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -105,6 +106,11 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Mapping\Events\MembershipEvent.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="hibernate.cfg.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

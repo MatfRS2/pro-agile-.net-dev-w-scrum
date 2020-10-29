@@ -11,7 +11,8 @@ namespace KojackGames.Blackjack.Infrastructure.Nhibernate
         {                       
             Configuration config = new Configuration();
              
-            config.AddAssembly("KojackGames.Blackjack.Infrastructure.Nhibernate");
+            
+            //config.AddAssembly("KojackGames.Blackjack.Infrastructure.Nhibernate");
             
             config.Configure();
 
