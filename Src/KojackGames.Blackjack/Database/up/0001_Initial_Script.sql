@@ -1,4 +1,7 @@
-USE [Blackjack]
+--CREATE DATABASE [MatfRs2.Blackjack]
+--GO 
+
+USE [MatfRs2.Blackjack]
 GO
 /****** Object:  Table [dbo].[Players]    Script Date: 05/09/2011 21:50:42 ******/
 SET ANSI_NULLS ON
