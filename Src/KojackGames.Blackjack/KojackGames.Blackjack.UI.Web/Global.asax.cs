@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Optimization;
 using System.Web.Routing;
 using KojackGames.Blackjack.Infrastructure.Nhibernate;
 using KojackGames.Blackjack.UI.Web.Controllers;
@@ -23,14 +24,13 @@ namespace KojackGames.Blackjack.UI.Web
         protected void Application_Start()
         {
             SessionFactory.Init();
-
             AreaRegistration.RegisterAllAreas();
-
             BootStrapper.configure_dependencies();
-
             ControllerBuilder.Current.SetControllerFactory(new StructureMapControllerFactory());
-
+            FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
+            BundleConfig.RegisterBundles(BundleTable.Bundles);
             RegisterRoutes(RouteTable.Routes);
+
         }
     }
 }

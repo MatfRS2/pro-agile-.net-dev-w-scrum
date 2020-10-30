@@ -8,7 +8,8 @@
     <link rel="stylesheet" type="text/css" href="/Css/Style.css" media="screen" />    
     <script src="/Scripts/jquery-1.4.1.js" type="text/javascript"></script>
 </head>
-<%=Html.Flash()%>
+    @Html.Flash()
+    
 <body>
     <div id="flash" style="display:none"></div>
     <div id="main">                    
@@ -16,11 +17,11 @@
             <div id="rightheader">
                 <%
                     if (Model.account_information_view.player_is_logged_in) {%>
-                     Hello <%:Model.account_information_view.player_name %> | <%:Html.ActionLink("Your Account", "Index", "AccountHome")%> | <%:Html.ActionLink("Signout", "Index", "SignOut")%>
+                     Hello @Model.account_information_view.player_name | @Html.ActionLink("Your Account", "Index", "AccountHome") | @Html.ActionLink("Signout", "Index", "SignOut")
                 <%  }
                     else {
                     %>
-                    <%:Html.ActionLink("Login", "LogOn", "AccountLogOn") %> | <%:Html.ActionLink("Register", "Register", "AccountRegister")%>                                 
+                    @Html.ActionLink("Login", "LogOn", "AccountLogOn") | @Html.ActionLink("Register", "Register", "AccountRegister")                               
                     <% } %>                
             </div>                       
         </div>        
