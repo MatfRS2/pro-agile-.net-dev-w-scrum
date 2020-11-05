@@ -171,6 +171,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="GamePlay\BlackJackTable.cd" />
     <None Include="GamePlay\UML.cd" />
   </ItemGroup>
   <ItemGroup />

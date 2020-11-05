@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="KojackGames.Blackjack.Domain.GamePlay.Model.BlackJackTable" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAQAQAAAAAAAACAAEAAAAAQAAABAAAAAIAAAAA=</HashCode>
+      <FileName>GamePlay\Model\BlackJackTable.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="KojackGames.Blackjack.Domain.GamePlay.Model.BlackJackTableFactory" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>GamePlay\Model\BlackJackTableFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="KojackGames.Blackjack.Domain.GamePlay.Model.CardShoe" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>GamePlay\Model\CardShoe.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="KojackGames.Blackjack.Domain.GamePlay.Model.TableStatus" Collapsed="true">
+    <Position X="6.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAgBBQQAAEAIAEAIAAAAgAAAAAAgA=</HashCode>
+      <FileName>GamePlay\Model\TableStatus.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="KojackGames.Blackjack.Domain.GamePlay.Model.EmptyTable" Collapsed="true">
+    <Position X="3" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GamePlay\Model\TableStatus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KojackGames.Blackjack.Domain.GamePlay.Model.FullTable" Collapsed="true">
+    <Position X="5.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GamePlay\Model\TableStatus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KojackGames.Blackjack.Domain.GamePlay.Model.HandsDealt" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GamePlay\Model\TableStatus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KojackGames.Blackjack.Domain.GamePlay.Model.GameFinished" Collapsed="true">
+    <Position X="9.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GamePlay\Model\TableStatus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="KojackGames.Blackjack.Domain.GamePlay.Model.IBlackJackTable" Collapsed="true">
+    <Position X="7" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAgACAAEAAAAAQAIABAAAAAAAAAgA=</HashCode>
+      <FileName>GamePlay\Model\IBlackJackTable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="KojackGames.Blackjack.Domain.GamePlay.Model.IBlackJackTableFactory" Collapsed="true">
+    <Position X="11.75" Y="3.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>GamePlay\Model\IBlackJackTableFactory.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="KojackGames.Blackjack.Domain.GamePlay.Model.ICardShoe" Collapsed="true">
+    <Position X="12.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GamePlay\Model\ICardShoe.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="KojackGames.Blackjack.Domain.GamePlay.Model.ITableStatus" Collapsed="true">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAQAAEAAAEAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>GamePlay\Model\ITableStatus.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
